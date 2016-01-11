@@ -25,4 +25,11 @@ require('pry')
     return false unless triangle?
     (@sideaA != @sideB && @sideA != @sideC) ? true : false
   end
+
+  define_method(:triangle_type) do
+    return "WTF" unless triangle?
+    return "equilateral"  if equilateral?
+    return "isoceles"  if isoceles?
+    return "scalene"  if scalene?
+  end
 end
