@@ -45,7 +45,7 @@ describe(Triangle) do
     end
 
     it('will true false if the triangle is not an isoceles') do
-      test_triangle = Triangle.new(4,4,10)
+      test_triangle = Triangle.new(4,4,4)
       expect(test_triangle.isoceles?()).to(eq(false))
     end
 

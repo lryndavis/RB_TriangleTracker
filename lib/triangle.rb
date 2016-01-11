@@ -8,7 +8,7 @@ require('pry')
   end
 
   define_method(:triangle?) do
-    @sideA + @sideB > @sideC ? true : false
+    (@sideA + @sideB) > @sideC ? true : false
   end
 
   define_method(:equilateral?) do
@@ -18,7 +18,7 @@ require('pry')
 
   define_method(:isoceles?) do
     return false unless triangle?
-    (@sideA == @sideB || @sideB == @sideC || @sideA == @sideC) ? true : false
+    ((@sideA == @sideB || @sideB == @sideC || @sideA == @sideC) && !equilateral?) ? true : false
   end
 
   define_method(:scalene?) do
