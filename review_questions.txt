@@ -1,0 +1,16 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+  Yes
+Is there good spec coverage (unit and integration)?
+  Yes
+Do all specs pass?
+  Yes
+Is the application logic clear and easy to navigate?
+  Yes
+Are custom classes and methods created?
+  Yes
+Is the site user-friendly?
+  Yes
+Are there opportunities for refactoring?
+  Yes but not needed.
+Do you have any additional constructive criticism or positive feedback to share?
+  triangle.rb looks great. Awesome use of the ruby keywords and ternary operators.

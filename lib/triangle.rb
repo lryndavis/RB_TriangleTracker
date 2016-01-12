@@ -1,11 +1,15 @@
 class Triangle
-require('pry')
+require('pry') #should this be above the class?
 
   define_method(:initialize) do |sideA, sideB, sideC|
      @sideA = sideA
      @sideB = sideB
      @sideC = sideC
   end
+
+  #
+  # Really good use of the ruby keywords and ternary operators
+  #
 
   define_method(:triangle?) do
     (@sideA + @sideB) > @sideC ? true : false
@@ -27,7 +31,7 @@ require('pry')
   end
 
   define_method(:triangle_type) do
-    return "WTF" unless triangle?
+    return "WTF" unless triangle? #ha!
     return "equilateral"  if equilateral?
     return "isoceles"  if isoceles?
     return "scalene"  if scalene?
